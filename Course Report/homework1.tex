@@ -1,0 +1,84 @@
+\documentclass{article}
+
+%
+% 引入模板的style文件
+%
+\usepackage{homework}
+\usepackage{xeCJK} %中文包，正常显示中文
+\usepackage{ctex} %支持中文，不加这个包，参考文献几个大字显示为英文且出警告
+
+%
+% 封面
+%
+
+\title{
+	\includegraphics[scale = 0.45]{images/title/ucas-logo1.png}\\
+    \vspace{1in}
+    \textmd{\textbf{\hmwkClass\ \hmwkTitle}}\\
+    \textmd{\textbf{\hmwkSubTitle}}\\
+    \normalsize\vspace{0.1in}\small{\hmwkCompleteTime }\\
+    \vspace{0.1in}\large{\textit{\hmwkClassInstructor\ }}\\
+    \vspace{3in}
+}
+
+\author{\hmwkAuthorName \\ 
+	\hmwkAuthorStuID}
+\date{}
+
+\renewcommand{\part}[1]{\textbf{\large Part \Alph{partCounter}}\stepcounter{partCounter}\\}
+
+
+%
+% 正文部分
+%
+\begin{document}
+
+
+\maketitle
+
+
+%\include{chapters/ch01}
+
+
+\pagebreak
+
+\begin{homeworkProblem}
+\textbf{1.电子商务名词解释：B2B，B2C ，C2B ，C2C ，O2O ，并结合国内外知名电子商务平台案例进行说明。}\\
+	{\color{blue}\textbf{答:}B2B：\\
+	\qquad B2C:\\
+\qquad	C2B：\\
+\qquad	C2C:\\
+\qquad	O2O:\\
+	}
+\end{homeworkProblem}
+
+
+\begin{homeworkProblem}
+	\textbf{2.分析大数据6V的特点，如果是参考已有的文章或者网址，请在参考文献部分标出~\cite{zhu}。}\\
+{\color{blue}\textbf{答:}大数据的特征可以总结为“6V”，第一，数据量（Volume）大。比如我们在淘宝中的每一次搜索，都会被收集和记录，企业再根据我们的搜索来描绘出用户的肖像，从而精准定位目标客户，推送出客户感兴趣的产品。我国人口众多，形成的数据量自然也很庞大。第二，速度（Velocity）快。速度快包括两方面，流入和流出。从流入的角度来说，每天都有不断流入的动态数据。尤其是在网络时代，我们会留下许多“痕迹”，这些都是累计的数据。由于流入速度快，自然流出——也就是数据处理的速度也要快。
+
+}
+	
+\end{homeworkProblem}
+
+
+\pagebreak
+
+\begin{homeworkProblem}
+\textbf{3.常用的网络爬虫工具，以及各个工具的特点分析。}\\
+{\color{blue}\textbf{答:}
+
+}
+
+
+\end{homeworkProblem}
+
+
+
+
+% 引用文献
+\bibliographystyle{unsrt}  % unsrt:根据引用顺序编号
+\bibliography{refs}
+
+
+\end{document}

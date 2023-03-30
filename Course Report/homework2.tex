@@ -1,0 +1,144 @@
+\documentclass{article}
+
+%
+% 引入模板的style文件
+%
+\usepackage{homework}
+\usepackage{xeCJK} %中文包，正常显示中文
+\usepackage{ctex} %支持中文，不加这个包，参考文献几个大字显示为英文且出警告
+\usepackage{url}
+%
+% 封面
+%
+
+\title{
+	\includegraphics[scale = 0.45]{images/title/ucas-logo1.png}\\
+    \vspace{1in}
+    \textmd{\textbf{\hmwkClass\ \hmwkTitle}}\\
+    \textmd{\textbf{\hmwkSubTitle}}\\
+    \normalsize\vspace{0.1in}\small{\hmwkCompleteTime }\\
+    \vspace{0.1in}\large{\textit{\hmwkClassInstructor\ }}\\
+    \vspace{3in}
+}
+
+\author{\hmwkAuthorName \\ 
+	\hmwkAuthorStuID}
+\date{}
+
+\renewcommand{\part}[1]{\textbf{\large Part \Alph{partCounter}}\stepcounter{partCounter}\\}
+
+
+%
+% 正文部分
+%
+\begin{document}
+
+
+\maketitle
+
+
+%\include{chapters/ch01}
+
+
+\pagebreak
+
+\begin{homeworkProblem}
+\textbf{1.	选择的爬虫工具是什么？该工具具有什么特点？}\\
+	\textbf{Solution:}\\
+	{\color{blue}空
+		
+	}
+\end{homeworkProblem}
+
+
+\begin{homeworkProblem}
+	\textbf{2.	爬虫工具环境部署成功截图。}\\
+	\textbf{Solution:}\\
+	{\color{blue}空}
+	\begin{figure}[H]  % 这里记得用[H]
+		\centering
+		\includegraphics[width=0.7\linewidth]{images/Fig1}
+		\caption{Scrapy环境部署成功}
+		\label{fig:ucas-logo}
+	\end{figure}
+	
+\end{homeworkProblem}
+
+
+\pagebreak
+
+\begin{homeworkProblem}
+\textbf{3.	爬虫任务选题
+	\begin{itemize}
+	\item{选题1：爬取豆瓣电影Top250页面~\footnote{\url{https://movie.douban.com/top250}}，获取每部电影的序号、片名、导演、编剧、主演、类型、制作国家/地区、语言、上映日期、片长、又名、豆瓣评分和剧情简介等内容，将数据存入本地txt或者xlsx文件。}
+	\item{选题2：爬取南京热门旅游景点的点评数据~\footnote{\url{https://www.mafengwo.cn/jd/10684/gonglve.html}}，可以选择其中一个景点，爬取景点的所有文本点评数据(图片不用爬取)。}
+    \end{itemize}
+}
+\textbf{Solution:}\\
+{\color{blue}
+
+(1) 打开url并返回BeautifulSop对象： 
+\begin{figure}[H]  % 这里记得用[H]
+	\centering
+	\includegraphics[width=0.75\linewidth]{images/Fig2}
+	\caption{返回BeautifulSop对象}
+	\label{fig:ucas-logo}
+\end{figure}
+
+(2) 解析并获取目标对象： 
+\begin{figure}[H]  % 这里记得用[H]
+	\centering
+	\includegraphics[width=0.75\linewidth]{images/Fig3}
+	\caption{解析并获取目标对象}
+	\label{fig:ucas-logo}
+\end{figure}
+
+
+(3) 爬虫数据存为csv格式文件 ：
+	\begin{figure}[H]  % 这里记得用[H]
+		\centering
+		\includegraphics[width=0.7\linewidth]{images/Fig4}
+		\caption{爬虫结果存储}
+		\label{fig:ucas-logo}
+	\end{figure}
+
+(4)运行执行函数： 
+	\begin{figure}[H]  % 这里记得用[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{images/Fig5}
+	\caption{爬虫执行的主函数}
+	\label{fig:ucas-logo}
+\end{figure}
+
+
+(5)爬虫结果展示：
+	\begin{figure}[H]  % 这里记得用[H]
+	\centering
+	\includegraphics[width=1\linewidth]{images/Fig6}
+	\caption{CSV保存的爬虫数据}
+	\label{fig:ucas-logo}
+\end{figure}
+}
+
+
+\end{homeworkProblem}
+\pagebreak
+
+\begin{homeworkProblem}
+\textbf{4.附加题：在上述的爬虫程序中将获取的数据直接传入数据库，选择的什么数据库，导入数据的代码的截图和最终数据查询的截图。}\\
+\textbf{Solution:}\\
+{\color{blue}
+空
+}
+\end{homeworkProblem}
+
+
+
+
+
+% 引用文献
+%\bibliographystyle{unsrt}  % unsrt:根据引用顺序编号
+%\bibliography{refs}
+
+
+\end{document}
